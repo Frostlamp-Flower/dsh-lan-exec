@@ -1,0 +1,8 @@
+# dsh-lan-exec bundle patch: one inert row. `setup.mjs` (or the plugin
+# manager) writes the real configuration into the profile's own
+# cordis.patch.yml, which is layered after this bundle.
+- insert:
+    - id: lan-exec
+      name: dsh-lan-exec
+      config:
+        role: 'off'
